@@ -79,14 +79,14 @@ void battle(Player *player_1, Player *player_2) {
         player_1->health -= (p2_attack - p1_attack);
         cout << player_2->name << " wins again!" << endl<<endl;
 
-       //print out health post-battle
-        cout << player_1->name << "'s health is now " << player_1->health << endl;
-        cout << player_2->name << "'s health is now " << player_2->health << endl;
-
-        //attack points are the same - tie game
+           //attack points are the same - tie game
     } else {
         cout << "Tie!" << endl<<endl;
     }
+    //print out health post-battle
+    cout << player_1->name << "'s health is now " << player_1->health << endl;
+    cout << player_2->name << "'s health is now " << player_2->health << endl;
+
 }
 //function to generate random number
 int random(int low, int high) {
